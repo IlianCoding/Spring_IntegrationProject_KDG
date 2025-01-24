@@ -1,0 +1,48 @@
+.shopContainer {
+    background-image: url('https://i.imgur.com/kRegqCk.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    border-radius: 10px;
+    font-family: 'MedievalSharp', cursive;
+    color: #4B0082;
+    min-height: 800px;
+}
+
+@media (min-width: 1200px) {
+    .shopContainer {
+        padding: 80px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .shopContainer {
+        padding: 20px !important;
+    }
+}
+
+.shop-card-empty {
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    color: #4B0082 !important;
+    font-family: 'MedievalSharp', cursive !important;
+}
+
+.shop-card {
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    min-height: 143px;
+}
+
+.shop-card-color h6 {
+    color: white !important;
+}
+
+.shop-title {
+    padding-top: 5px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    border-radius: 5px;
+}
+
+.tabs {
+    padding: 10px;
+}
+

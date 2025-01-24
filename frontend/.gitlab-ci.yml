@@ -1,0 +1,80 @@
+stages:
+  - build
+  - test
+  - deploy
+  - production
+
+services:
+  - name: docker:dind
+    command: [ "--tls=false" ]
+
+variables:
+  DOCKER_IMAGE: "ellenberckmans/react_container_team2"
+  DOCKER_IMAGE_LOCAL: "ellenberckmans/react_container_team2_local"
+  DOCKER_IMAGE_DEV: "ellenberckmans/react_container_team2_dev"
+
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - node_modules/
+
+build:
+  stage: build
+  image: node:18
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "Building the frontend project using npm"
+    - npm ci
+    - npm run build
+  artifacts:
+    paths:
+      - "dist/"
+
+test:
+  stage: test
+  image: node:18
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "Running frontend tests using Vitest"
+    - npm ci
+    - npm run test
+  artifacts:
+    when: always
+    reports:
+      junit: ./test-results/junit.xml
+    paths:
+      - ./test-results/
+
+deploy:
+  stage: deploy
+  image: node:18
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "Running deployment"
+    - mv dist/ deployed/
+  artifacts:
+    paths:
+      - "deployed/"
+
+production:
+  stage: production
+  image: docker:24.0.6
+  services:
+    - docker:24.0.6-dind
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  before_script:
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  script:
+    - echo "Building Docker image"
+    - docker build -t $DOCKER_IMAGE:latest .
+    - docker push $DOCKER_IMAGE:latest
+    - docker build -t $DOCKER_IMAGE_DEV:latest .
+    - docker push $DOCKER_IMAGE_DEV:latest
+    - docker build -t $DOCKER_IMAGE_LOCAL:latest .
+    - docker push $DOCKER_IMAGE_LOCAL:latest

@@ -1,0 +1,267 @@
+body {
+    margin: 0 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: url('/assets/Medieval-cursor-resized.cur'), auto;
+}
+
+/* these are not real errors css just wants public in front of the url but that doesn't work */
+
+a, button, .MuiSvgIcon-root, .MuiButton-root {
+    cursor: url('/assets/Medieval-pointer-resized.cur'), auto !important;
+}
+
+.home-control {
+    cursor: url('/assets/Medieval-pointer-resized.cur'), auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    border-radius: 5px;
+    z-index: 1000;
+    font-family: 'MedievalSharp', cursive;
+    color: #4B0082;
+
+}
+.instruction-control {
+    cursor: url('/assets/Medieval-pointer-resized.cur'), auto;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    padding: 5px 10px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    border-radius: 5px;
+    z-index: 1000;
+    font-family: 'MedievalSharp', cursive;
+    color: #4B0082;
+
+}
+
+
+.reset-control {
+    cursor: url('/assets/Medieval-pointer-resized.cur'), auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    border-radius: 5px;
+    z-index: 1000;
+    font-family: 'MedievalSharp', cursive;
+    color: #4B0082;
+}
+
+.main-map {
+    background-image: url('https://i.imgur.com/kRegqCk.jpeg');
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    cursor: url('/assets/Medieval-cursor.cur'), auto !important;
+}
+
+.main-game-window {
+    padding: 20px;
+}
+
+.turn-title-main {
+    font-family: 'MedievalSharp', cursive !important;
+    color: #4B0082 !important;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    border: 2px solid #8B4513;
+    padding: 10px;
+    margin: 20px 0 !important;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+    position: relative;
+}
+
+.main-content {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+}
+
+.frames {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.frame {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: 3px solid;
+}
+
+.actions {
+    justify-content: center;
+    gap: 5px;
+}
+
+.actions button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: url('/assets/Medieval-pointer-resized.cur'), auto;
+    font-weight: bold;
+}
+
+.character-section {
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    padding: 10px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.character-item-action {
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+    transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.character-item-action:hover {
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6));
+}
+
+.player-state {
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    padding: 10px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.coins-hand-buildings-section {
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+.coins-section {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.hand-buildings-section {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.notifications-container {
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    padding: 10px;
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+    border-radius: 8px;
+}
+
+.notifications-title, .player-action-title, .character-action-title {
+    font-family: 'MedievalSharp', cursive !important;
+    font-size: 2.2rem !important;
+    color: #4B0082 !important;
+}
+
+.time-left {
+    position: absolute;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    top: -200px;
+    right: 10px;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5rem;
+    color: #4B0082;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.time-left.disabled {
+    opacity: 0;
+}
+
+.time-left-time-section {
+    font-family: 'MedievalSharp', cursive !important;
+    color: #4B0082 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: 2px solid #8B4513;
+    padding: 10px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* OverviewSection */
+
+.overview {
+    position: absolute;
+    top: -90px;
+    left: 10px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dialog-enter {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.returning {
+    animation: returnAnimation 0.5s ease-out;
+}
+
+@keyframes returnAnimation {
+    from {
+        transform: translate(25px, 25px) scale(1.2);
+        opacity: 0.5;
+    }
+    to {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+}

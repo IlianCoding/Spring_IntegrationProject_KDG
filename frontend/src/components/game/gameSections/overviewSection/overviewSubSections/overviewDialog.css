@@ -1,0 +1,132 @@
+:root {
+    --glow-color: #FFD700;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px var(--glow-color), inset 0 0 5px var(--glow-color);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--glow-color), inset 0 0 20px var(--glow-color);
+    }
+    100% {
+        box-shadow: 0 0 5px var(--glow-color), inset 0 0 5px var(--glow-color);
+    }
+}
+
+.card-container {
+    border: 2px solid #8B4513;
+    border-radius: 10px;
+    padding: 16px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380');
+    background-size: cover;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.card-header .avatar {
+    margin-right: 8px;
+    width: 56px;
+    height: 56px;
+    border: 2px solid #8B4513;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.card-header .username {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.5rem;
+    color: #4B0082;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.card-header .current-turn {
+    font-weight: bold;
+    color: #FF4500;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.buildings-built-text {
+    font-family: 'MedievalSharp', cursive !important;
+    font-size: 1.4rem !important;
+    color: #4B0082 !important;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.gold-icon-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.gold-icon-container img {
+    width: 72px;
+    height: 72px;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.gold-icon-container .gold-amount {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    color: #4B0082;
+    font-weight: bold;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.buildings-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.building-item, .character-item {
+    display: flex;
+    align-items: flex-start;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+    transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.building-item:hover, .character-item:hover {
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6));
+}
+
+.character-container {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.character-container img {
+    border-radius: 10%;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.character-container .character-title {
+    align-self: flex-start;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.4rem;
+    color: #4B0082;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}
+
+.dialog-background {
+    background-image: url('https://i.imgur.com/EdKqpwm.jpeg');
+    background-size: 100% 110vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4));
+}

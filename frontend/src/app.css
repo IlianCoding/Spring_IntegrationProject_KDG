@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import "@flaticon/flaticon-uicons/css/all/all.css";
+
+#root {
+    background-color: gray;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380');
+    background-size: cover;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4B0082;
+    border-radius: 10px;
+    border: 3px solid #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3A0066;
+}
+
+@keyframes ellipsis {
+    0% {
+        content: '.';
+    }
+    33% {
+        content: '..';
+    }
+    66% {
+        content: '...';
+    }
+    100% {
+        content: '.';
+    }
+}
+
+.ellipsis::after {
+    content: '';
+    animation: ellipsis 1s infinite;
+}

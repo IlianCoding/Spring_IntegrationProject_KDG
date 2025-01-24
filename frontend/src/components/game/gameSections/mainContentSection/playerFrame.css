@@ -1,0 +1,59 @@
+:root {
+    --glow-color: #FFD700;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px var(--glow-color), inset 0 0 5px var(--glow-color);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--glow-color), inset 0 0 20px var(--glow-color);
+    }
+    100% {
+        box-shadow: 0 0 5px var(--glow-color), inset 0 0 5px var(--glow-color);
+    }
+}
+
+.frame {
+    border-radius: 10px;
+    padding: 16px;
+    background-image: url('https://img.freepik.com/free-photo/wooden-floor-background_53876-88628.jpg?t=st=1734941126~exp=1734944726~hmac=5ec16ce1beee4e0fb50a47948617b7327c054e72de79f6a07d167642eeb123d3&w=1380') !important;
+    background-size: cover;
+    position: relative;
+}
+
+.frame .player-name,
+.frame .placed-buildings-section .building-item {
+    font-family: 'MedievalSharp', cursive;
+    font-size: 2.5rem;
+    color: #4B0082;
+}
+
+.placed-buildings-section {
+    margin-top: 8px;
+}
+
+.buildings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.building-item-main img {
+    width: calc(100px * 1.5) !important;
+    height: calc(162px * 1.5) !important;
+    margin-right: 4px;
+    transition: filter 0.3s ease-in;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.6));
+}
+
+.building-item-main img:hover {
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.8));
+}
+
+.buildings-title {
+    font-family: 'MedievalSharp', cursive !important;
+    font-size: 2.2rem !important;
+    color: #4B0082 !important;
+}

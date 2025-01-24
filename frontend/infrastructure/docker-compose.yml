@@ -1,0 +1,13 @@
+services:
+  react_container_team2:
+    image: ellenberckmans/react_container_team2:latest
+    build: ../
+    ports:
+      - "5174:80"
+    restart: always
+    networks:
+      - machiavelli_network
+
+networks:
+  machiavelli_network:
+    driver: bridge

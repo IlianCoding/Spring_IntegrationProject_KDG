@@ -1,0 +1,29 @@
+.character-action {
+    border: 2px solid #8b4513;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px 0;
+    font-family: 'MedievalSharp', cursive;
+    cursor: url('/assets/Medieval-pointer-resized.cur'), auto;
+}
+
+.character-title {
+    color: #4B0082;
+    margin-bottom: 10px;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.character-button {
+    background-color: #8b4513;
+    color: #ff9d45;
+    font-family: 'MedievalSharp', cursive;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: url('/assets/Medieval-pointer-resized.cur'), auto;
+}
+
+.character-button:hover {
+    background-color: #a0522d;
+    color: #FFD700;
+}
