@@ -1,0 +1,20 @@
+input {
+  kafka {
+    id => "data_engineering_test"
+    host => "172.19.0.3:9092"
+  }
+
+}
+
+
+## Add your filters / logstash plugins configuration here
+
+output {
+	elasticsearch {
+		hosts => "elasticsearch:9200"
+		user => "logstash_internal"
+		password => "${LOGSTASH_INTERNAL_PASSWORD}"
+        data_stream => "true"
+        data_stream_dataset => "gamingevents"
+	}
+}
