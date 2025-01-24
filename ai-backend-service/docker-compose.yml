@@ -1,0 +1,32 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      ollama:
+        condition: service_healthy
+    container_name: ollama-app
+    networks:
+      - machiavelli_network
+
+  ollama:
+    build:
+      context: .
+      dockerfile: Dockerfile-ollama
+    ports:
+      - "11434:11434"
+    container_name: ollama
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://0.0.0.0:11434/api/version"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - machiavelli_network
+
+networks:
+  machiavelli_network:
+    driver: bridge

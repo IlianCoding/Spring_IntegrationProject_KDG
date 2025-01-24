@@ -1,0 +1,12 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+
+# Ignore SQLite database
+app/data/*.db
+
+# Ignore other unnecessary files
+.git

@@ -1,0 +1,128 @@
+{
+  "rules": [
+    {
+      "section": "objective",
+      "text": "Citadels is een strategisch kaartspel waar spelers strijden om de meest prestigieuze middeleeuwse stad te bouwen. Het doel is om de meeste overwinningspunten te verzamelen door districten te bouwen, karakterrollen slim te gebruiken en tactisch te spelen. Het spel eindigt wanneer een speler hun achtste district bouwt, waarna die ronde nog wordt afgemaakt. Punten worden verdiend door: de waarde van gebouwde districten, bonuspunten voor de eerste complete stad (4 punten) of andere complete steden (2 punten), het verzamelen van alle vijf verschillende type districten (3 punten), en door speciale eigenschappen van unieke districten. Bij gelijkspel wint de speler die het laatst de Koning was."
+    },
+    {
+      "section": "setup",
+      "text": "Benodigdheden: 1 kroon, 8 karakterkaarten, 65 districtskaarten (geel/adellijk, blauw/kerkelijk, groen/handel, rood/militair en paars/uniek), en 30 goudstukken."
+    },
+    {
+      "section": "setup",
+      "text": "Voorbereiding: 1. Sorteer alle kaarten en leg goudstukken als bank klaar. 2. Elke speler krijgt 4 goudstukken en 4 districtskaarten waarvan ze er 2 mogen houden. 3. Overige kaarten gaan terug onder de stapel. 4. Oudste speler krijgt de kroon en is eerste kroondrager. 5. Schud de karakterkaarten. Afhankelijk van het aantal spelers worden kaarten weggelegd: bij 3 spelers (2 open), 4 spelers (2 gedekt), 5 spelers (1 gedekt), 6+ spelers (0 gedekt)."
+    },
+    {
+      "section": "phases",
+      "text": "Het spel verloopt in rondes met twee hoofdfases: 1. Karakterfase: Begin bij de kroondrager, kies in clockwise volgorde één karakter. Enkele kaarten worden open/gedekt weggelegd (aantal afhankelijk van spelersaantal). De laatste kaart gaat gedekt weg. Het geheim houden van je karakter is cruciaal. 2. Beurtfase: Karakters worden in numerieke volgorde (1-8) opgeroepen. Bij jouw karakter en als je niet vermoord bent, voer je je beurt uit. Speciale situaties: Vermoord karakter slaat beurt over, bestolen karakter geeft al zijn goud aan de Dief, bij vermoorde Koning wordt de kroon niet doorgegeven, een vermoord karakter kan nog bestolen worden."
+    },
+    {
+      "section": "turn",
+      "text": "Elke ronde bestaat uit twee hoofdfases: de Karakterfase en de Beurtfase. Een volledig spel duurt meestal 7-8 rondes, afhankelijk van hoe snel spelers hun stad kunnen voltooien."
+    },
+    {
+      "section": "turn",
+      "text": "De Karakterfase begint bij de kroondrager. Deze schudt alle karakterkaarten en legt er enkele open en gedekt weg (aantal afhankelijk van spelersaantal). Vervolgens kiest elke speler in clockwise volgorde één karakter. De laatste kaart wordt gedekt weggelegd. Het geheim houden van je karakter en het inschatten welke karakters anderen hebben gekozen is een cruciaal onderdeel van de strategie."
+    },
+    {
+      "section": "turn",
+      "text": "In de Beurtfase worden de karakters in numerieke volgorde (1-8) opgeroepen. Als jouw karakter wordt genoemd en niet vermoord is, voer je je beurt uit. Een beurt bestaat uit: 1. Resources nemen (2 goud OF 2 kaarten trekken en 1 houden) 2. Optioneel één district bouwen 3. Je karaktereigenschap gebruiken. Deze acties mag je in elke volgorde uitvoeren."
+    },
+    {
+      "section": "turn_specials",
+      "text": "Speciale situaties tijdens een ronde: 1. Als je karakter vermoord is, sla je je beurt over 2. Als je karakter bestolen is, geef je al je goud aan de Dief wanneer je karakter wordt opgeroepen 3. Als de Koning vermoord is, wordt de kroon niet doorgegeven 4. Een vermoord karakter kan nog steeds bestolen worden."
+    },
+    {
+      "section": "character",
+      "text": "De Moordenaar (1) kan een ander karakter 'vermoorden' door het nummer te noemen. Het vermoorde karakter slaat deze ronde over. De Moordenaar mag niet karakter 1 noemen. Tactisch gebruik: kies een karakter waarvan je denkt dat een sterke tegenstander het heeft gekozen. De Moordenaar gaat als eerste in de beurt en kan dus anderen hinderen voordat ze aan de beurt komen."
+    },
+    {
+      "section": "character",
+      "text": "De Dief (2) kan al het goud van een ander karakter stelen door het nummer te noemen. Je mag niet de Moordenaar (1) of een vermoord karakter bestelen. Je krijgt het goud pas wanneer dat karakter aan de beurt is. Tactisch gebruik: steel van karakters die waarschijnlijk veel goud zullen ontvangen, zoals de Koopman of Koning in een spel met veel bijpassende districten."
+    },
+    {
+      "section": "character",
+      "text": "De Magiër (3) heeft twee mogelijke acties waarvan je er één mag kiezen: 1. Ruil je volledige hand districtskaarten met die van een andere speler 2. Leg een willekeurig aantal kaarten gedekt af en trek evenveel nieuwe kaarten. Tactisch gebruik: ruil met een speler die kaarten heeft die jij nodig hebt, of ververs slechte kaarten voor nieuwe mogelijkheden."
+    },
+    {
+      "section": "character",
+      "text": "De Koning (4) krijgt de kroon en is volgende ronde eerst aan de beurt bij het kiezen van karakters. Daarnaast ontvangt hij 1 goud voor elk adellijk (geel) district in zijn stad. Tactisch gebruik: kies de Koning wanneer je veel gele districten hebt of de kroon nodig hebt voor controle over de karakterkeuze volgende ronde."
+    },
+    {
+      "section": "character",
+      "text": "De Prediker (5) ontvangt 1 goud voor elk kerkelijk (blauw) district in zijn stad. Je districten kunnen niet vernietigd worden door de Condottiere. Tactisch gebruik: kies de Prediker als bescherming tegen de Condottiere of wanneer je veel blauwe districten hebt gebouwd."
+    },
+    {
+      "section": "character",
+      "text": "De Koopman (6) ontvangt aan het begin van zijn beurt 1 extra goud uit de bank. Daarnaast krijgt hij 1 goud voor elk handels (groen) district in zijn stad. Tactisch gebruik: kies de Koopman wanneer je extra goud nodig hebt voor dure districten of wanneer je veel groene districten hebt."
+    },
+    {
+      "section": "character",
+      "text": "De Bouwmeester (7) trekt aan het begin van zijn beurt 2 extra districtskaarten. Hij mag tijdens zijn beurt maximaal 3 districten bouwen (in plaats van 1). Je moet nog steeds voor elk district de normale bouwkosten betalen. Tactisch gebruik: kies de Bouwmeester wanneer je veel goud hebt en snel wilt bouwen."
+    },
+    {
+      "section": "character",
+      "text": "De Condottiere (8) ontvangt 1 goud voor elk militair (rood) district in zijn stad. Aan het einde van zijn beurt mag hij 1 district van een andere speler vernietigen door de bouwkosten min 1 te betalen. Je mag geen districten vernietigen van de Prediker of van een stad die al compleet is (8 districten). Tactisch gebruik: kies de Condottiere om tegenstanders te hinderen of wanneer je veel rode districten hebt."
+    },
+    {
+      "section": "districts",
+      "text": "Er zijn vijf types districten: 1. Adellijke districten. 2. Kerkelijke districten. 3. Handelsdictriten. 4. Militaire districten. 5. Unieke districten."
+    },
+    {
+      "section": "districts",
+      "text": "Adellijke districten (geel) zijn de prestigieuze gebouwen van je stad. Deze omvatten: Kasteel (4 goud): symboliseert macht en autoriteit. Paleis (5 goud): het pronkstuk van je stad. Manor (3 goud): een statig herenhuis. Slot (4 goud): een versterkte residentie. Deze districten leveren 1 goud op als je de Koning bent."
+    },
+    {
+      "section": "districts",
+      "text": "Kerkelijke districten (blauw) vertegenwoordigen religieuze gebouwen. Deze omvatten: Tempel (2 goud): een plaats van aanbidding. Kerk (3 goud): centrum van religieuze activiteit. Klooster (3 goud): waar monniken studeren. Kathedraal (5 goud): indrukwekkend religieus bouwwerk. Deze districten leveren 1 goud op met de Prediker en kunnen niet vernietigd worden door de Condottiere."
+    },
+    {
+      "section": "districts",
+      "text": "Handelsdictriten (groen) zijn de economische gebouwen. Deze omvatten: Taverne (1 goud): ontmoetingsplaats voor handelaren. Markt (2 goud): centrum van handel. Handelshuis (2 goud): waar deals worden gesloten. Haven (4 goud): voor maritieme handel. Gildehuis (3 goud): waar ambachtslieden samenkomen. Deze districten leveren 1 goud op met de Koopman."
+    },
+    {
+      "section": "districts",
+      "text": "Militaire districten (rood) zijn verdedigingswerken. Deze omvatten: Wachttoren (1 goud): voor vroege waarschuwing. Gevangenis (2 goud): voor wet en orde. Kazerne (3 goud): waar soldaten verblijven. Vestingwerk (3 goud): verdedigingsmuur. Fort (5 goud): militair bolwerk. Deze districten leveren 1 goud op met de Condottiere."
+    },
+    {
+      "section": "unique_districts",
+      "text": "Het Laboratorium (5 goud): Eén keer per beurt mag je een districtskaart uit je hand afleggen om 1 goud te ontvangen. Dit kan handig zijn om onbruikbare kaarten om te zetten in bruikbaar goud. Timing: Je mag deze actie uitvoeren voor of na je normale acties."
+    },
+    {
+      "section": "unique_districts",
+      "text": "De Smidse (5 goud): Wanneer je een district bouwt, mag je daarna 2 districtskaarten trekken. Dit is een krachtige eigenschap die je hand weer aanvult na het bouwen. Let op: dit geldt ook als je meerdere districten bouwt als Bouwmeester."
+    },
+    {
+      "section": "unique_districts",
+      "text": "Het Observatorium (4 goud): Wanneer je kiest om kaarten te trekken als actie, trek je er 3 in plaats van 2 en kiest er 1 om te houden. Dit verhoogt je kans op het vinden van bruikbare kaarten aanzienlijk."
+    },
+    {
+      "section": "unique_districts",
+      "text": "De Bibliotheek (6 goud): Wanneer je kiest om kaarten te trekken als actie, mag je beide kaarten houden in plaats van er één te kiezen. Dit is een zeer waardevol district voor het verzamelen van opties en het vinden van de juiste districten voor je strategie."
+    },
+    {
+      "section": "unique_districts",
+      "text": "Het Kerkhof (5 goud): Wanneer de Condottiere een district vernietigt, mag jij het direct kopen voor 1 goud. Dit moet je doen voordat het volgende karakter wordt opgeroepen. Let op: je kunt dit niet gebruiken als jouw district wordt vernietigd."
+    },
+    {
+      "section": "unique_districts",
+      "text": "De Drakenpoort (6 goud): Dit district kost 6 goud om te bouwen maar is 8 punten waard aan het einde van het spel. Het is een van de meest waardevolle districten in het spel, maar vereist een grote investering."
+    },
+    {
+      "section": "unique_districts",
+      "text": "De Universiteit (6 goud): Dit district kost 6 goud om te bouwen maar is 8 punten waard aan het einde van het spel. Vergelijkbaar met de Drakenpoort, biedt het een hoge puntenwaarde voor een hoge investering."
+    },
+    {
+      "section": "unique_districts",
+      "text": "De Schatkamer (5 goud): Aan het einde van het spel krijg je 1 extra punt voor elke goudstuk dat je nog bezit. Dit kan een interessante strategie bieden voor het sparen van goud in plaats van het uitgeven aan districten."
+    },
+    {
+      "section": "scoring",
+      "text": "Punten worden als volgt berekend: 1. Waarde van alle gebouwde districten (linksonder op kaart) 2. Bonus voor eerste complete stad (4 punten) 3. Bonus voor andere complete steden (2 punten) 4. Bonus voor alle vijf kleuren in je stad (3 punten) 5. Bonussen van unieke districten 6. Bij gelijkspel wint de speler die het laatst de Koning was."
+    },
+    {
+      "section": "strategy",
+      "text": "Belangrijke strategische tips: 1. Karakterkeuze: Let op timing en voorspel tegenstanders. Kies soms zwakkere karakters om aanvallen te vermijden. 2. Economie: Begin met goedkope districten voor stabiele inkomsten. Spaar voor dure districten maar wacht niet te lang. 3. Districtkeuze: Bouw complementaire districten die bij je karakters passen. Verzamel alle kleuren voor bonuspunten. 4. Timing: Gebruik karaktereigenschappen op het juiste moment. Bouw belangrijke districten wanneer de Condottiere onwaarschijnlijk is. 5. Aanval en Verdediging: Gebruik Moordenaar en Dief tegen sterke spelers. Kies Prediker voor bescherming. 6. Resources: Balanceer tussen goud en kaarten nemen. Gebruik unieke districteigenschappen voor extra voordeel. 7. Eindspel: Werk naar een complete stad (8 districten). Overweeg haast bij sterke tegenstanders. Bereken mogelijke eindscore inclusief bonussen."
+    }
+  ]
+}

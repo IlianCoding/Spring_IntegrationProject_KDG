@@ -1,0 +1,128 @@
+{
+  "rules": [
+    {
+      "section": "objective",
+      "text": "Citadels is a strategic card game where players compete to build the most prestigious medieval city. The goal is to collect the most victory points by constructing districts, using character roles wisely, and playing tactically. The game ends when a player builds their eighth district, at which point that round is completed. Points are earned by: the value of constructed districts, bonus points for the first completed city (4 points) or other completed cities (2 points), collecting all five different types of districts (3 points), and by the special abilities of unique districts. In case of a tie, the player who was last the King wins."
+    },
+    {
+      "section": "setup",
+      "text": "Requirements: 1 crown, 8 character cards, 65 district cards (yellow/noble, blue/ecclesiastical, green/trade, red/military, and purple/unique), and 30 gold coins."
+    },
+    {
+      "section": "setup",
+      "text": "Preparation: 1. Sort all cards and set up the gold coins as the bank. 2. Each player receives 4 gold coins and 4 district cards, out of which they may keep 2. 3. Return the remaining cards to the bottom of the deck. 4. The oldest player takes the crown and becomes the first crown-holder. 5. Shuffle the character cards. Depending on the number of players, some cards are set aside: for 3 players (2 face-up), 4 players (2 face-down), 5 players (1 face-down), 6+ players (0 face-down)."
+    },
+    {
+      "section": "phases",
+      "text": "The game is played in rounds consisting of two main phases: 1. Character Phase: Starting with the crown-holder, choose one character in clockwise order. Some cards are placed face-up/face-down (number depends on the player count). The last card is placed face-down. Keeping your character secret is crucial. 2. Turn Phase: Characters are called in numerical order (1-8). When your character is called and you are not assassinated, you take your turn. Special situations: An assassinated character skips their turn, a robbed character gives all their gold to the Thief, the crown is not passed on if the King is assassinated, and an assassinated character can still be robbed."
+    },
+    {
+      "section": "turn",
+      "text": "Every round consists of two main phases: the Character Phase and the Turn Phase. A full game usually lasts 7-8 rounds, depending on how quickly players complete their cities."
+    },
+    {
+      "section": "turn",
+      "text": "The Character Phase begins with the crown-holder. They shuffle all the character cards and place some face-up and face-down (number depends on the player count). Then each player, in clockwise order, chooses one character. The last card is placed face-down. Keeping your character secret and predicting which characters others have chosen is a crucial part of the strategy."
+    },
+    {
+      "section": "turn",
+      "text": "In the Turn Phase, characters are called in numerical order (1-8). If your character is called and not assassinated, you take your turn. A turn consists of: 1. Taking resources (2 gold OR drawing 2 cards and keeping 1) 2. Optionally constructing one district 3. Using your character's ability. These actions may be taken in any order."
+    },
+    {
+      "section": "turn_specials",
+      "text": "Special situations during a round: 1. If your character is assassinated, you skip your turn 2. If your character is robbed, give all your gold to the Thief when your character is called 3. If the King is assassinated, the crown is not passed on 4. An assassinated character can still be robbed."
+    },
+    {
+      "section": "character",
+      "text": "The Assassin (1) can 'assassinate' another character by naming its number. The assassinated character skips their turn. The Assassin may not name character 1. Tactical use: choose a character you think a strong opponent has chosen. The Assassin plays first and can hinder others before they take their turns."
+    },
+    {
+      "section": "character",
+      "text": "The Thief (2) can steal all the gold from another character by naming the number. You may not steal from the Assassin (1) or an assassinated character. You receive the gold only when the named character takes their turn. Tactical use: steal from characters likely to receive a lot of gold, such as the Merchant or King in a game with many matching districts."
+    },
+    {
+      "section": "character",
+      "text": "The Magician (3) has two possible actions, one of which you may choose: 1. Exchange your entire hand of district cards with another player's hand 2. Discard any number of cards face-down and draw an equal number of new cards. Tactical use: exchange with a player who has cards you need, or refresh bad cards for new opportunities."
+    },
+    {
+      "section": "character",
+      "text": "The King (4) takes the crown and will go first in the next round during character selection. Additionally, he receives 1 gold for each noble (yellow) district in his city. Tactical use: choose the King if you have many yellow districts or need the crown for control over character selection in the next round."
+    },
+    {
+      "section": "character",
+      "text": "The Bishop (5) receives 1 gold for each ecclesiastical (blue) district in his city. Your districts cannot be destroyed by the Warlord. Tactical use: choose the Bishop for protection against the Warlord or if you have many blue districts built."
+    },
+    {
+      "section": "character",
+      "text": "The Merchant (6) receives 1 extra gold from the bank at the start of his turn. Additionally, he gains 1 gold for each trade (green) district in his city. Tactical use: choose the Merchant when you need extra gold for expensive districts or if you have many green districts."
+    },
+    {
+      "section": "character",
+      "text": "The Architect (7) draws 2 extra district cards at the start of his turn. He may build up to 3 districts during his turn (instead of 1). You must still pay the normal construction costs for each district. Tactical use: choose the Architect when you have a lot of gold and want to build quickly."
+    },
+    {
+      "section": "character",
+      "text": "The Warlord (8) receives 1 gold for each military (red) district in his city. At the end of his turn, he may destroy 1 district belonging to another player by paying the construction cost minus 1. You may not destroy districts of the Bishop or cities that are already complete (8 districts). Tactical use: choose the Warlord to hinder opponents or when you have many red districts."
+    },
+    {
+      "section": "districts",
+      "text": "There are five types of districts: 1. Noble districts. 2. Ecclesiastical districts. 3. Trade districts. 4. Military districts. 5. Unique districts."
+    },
+    {
+      "section": "districts",
+      "text": "Noble districts (yellow) are the prestigious buildings in your city. These include: Castle (4 gold): symbolizes power and authority. Palace (5 gold): the showpiece of your city. Manor (3 gold): a stately mansion. Keep (4 gold): a fortified residence. These districts generate 1 gold if you are the King."
+    },
+    {
+      "section": "districts",
+      "text": "Ecclesiastical districts (blue) represent religious buildings. These include: Temple (2 gold): a place of worship. Church (3 gold): a center of religious activity. Monastery (3 gold): where monks study. Cathedral (5 gold): an impressive religious structure. These districts generate 1 gold with the Bishop and cannot be destroyed by the Warlord."
+    },
+    {
+      "section": "districts",
+      "text": "Trade districts (green) are the economic buildings. These include: Tavern (1 gold): a meeting place for merchants. Market (2 gold): a center of commerce. Trading Post (2 gold): where deals are made. Harbor (4 gold): for maritime trade. Guild Hall (3 gold): where craftsmen gather. These districts generate 1 gold with the Merchant."
+    },
+    {
+      "section": "districts",
+      "text": "Military districts (red) are defensive structures. These include: Watchtower (1 gold): for early warnings. Prison (2 gold): for law and order. Barracks (3 gold): where soldiers are stationed. Stronghold (3 gold): defensive walls. Fortress (5 gold): a military bastion. These districts generate 1 gold with the Warlord."
+    },
+    {
+      "section": "unique_districts",
+      "text": "The Laboratory (5 gold): Once per turn, you may discard a district card from your hand to gain 1 gold. This can be useful to convert useless cards into usable gold. Timing: You may perform this action before or after your normal actions."
+    },
+    {
+      "section": "unique_districts",
+      "text": "The Smithy (5 gold): When you construct a district, you may draw 2 district cards. This is a powerful ability that replenishes your hand after building. Note: This also applies if you build multiple districts as the Architect."
+    },
+    {
+      "section": "unique_districts",
+      "text": "The Observatory (4 gold): When you choose to draw cards as an action, draw 3 instead of 2 and keep 1. This greatly increases your chances of finding useful cards."
+    },
+    {
+      "section": "unique_districts",
+      "text": "The Library (6 gold): When you choose to draw cards as an action, you may keep both cards instead of choosing one. This is an extremely valuable district for gathering options and finding the right districts for your strategy."
+    },
+    {
+      "section": "unique_districts",
+      "text": "The Graveyard (5 gold): When the Warlord destroys a district, you may immediately buy it back for 1 gold. This must be done before the next character is called. Note: You cannot use this if your own district is destroyed."
+    },
+    {
+      "section": "unique_districts",
+      "text": "The Dragon Gate (6 gold): This district costs 6 gold to construct but is worth 8 points at the end of the game. It is one of the most valuable districts in the game but requires a significant investment."
+    },
+    {
+      "section": "unique_districts",
+      "text": "The University (6 gold): This district costs 6 gold to construct but is worth 8 points at the end of the game. Similar to the Dragon Gate, it offers high point value for a high investment."
+    },
+    {
+      "section": "unique_districts",
+      "text": "The Treasure Chamber (5 gold): At the end of the game, you receive 1 extra point for each gold coin you still possess. This can provide an interesting strategy for saving gold instead of spending it on districts."
+    },
+    {
+      "section": "scoring",
+      "text": "Points are calculated as follows: 1. Value of all constructed districts (bottom left of the card) 2. Bonus for the first completed city (4 points) 3. Bonus for other completed cities (2 points) 4. Bonus for all five colors in your city (3 points) 5. Bonuses from unique districts 6. In case of a tie, the player who was last the King wins."
+    },
+    {
+      "section": "strategy",
+      "text": "Important strategic tips: 1. Character choice: Pay attention to timing and predict opponents. Sometimes choose weaker characters to avoid attacks. 2. Economy: Start with cheap districts for stable income. Save for expensive districts but don't wait too long. 3. District choice: Build complementary districts that match your characters. Collect all colors for bonus points. 4. Timing: Use character abilities at the right moment. Build important districts when the Warlord is unlikely. 5. Attack and Defense: Use the Assassin and Thief against strong players. Choose the Bishop for protection. 6. Resources: Balance between taking gold and drawing cards. Use unique district abilities for extra advantages. 7. Endgame: Work towards a complete city (8 districts). Consider speeding up the end when strong opponents are close. Calculate possible final scores, including bonuses."
+    }
+  ]
+}

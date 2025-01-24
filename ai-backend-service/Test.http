@@ -1,0 +1,51 @@
+@host = http://localhost:11434
+@host2 = http://localhost:5000
+@host3 = http://localhost:8000
+@model = llama3
+
+### Voorbeeld met vars
+GET {{host}}/api/version
+
+###
+
+GET {{host2}}
+
+###
+
+GET {{host2}}/api/faqs/popular-questions
+
+###
+
+GET {{host2}}/api/rules/
+
+###
+
+POST {{host2}}/api/chatbot/
+Content-Type: application/json
+
+{
+    "message": "Wat is het algemene doel van het spel Citadels?"
+}
+
+###
+
+POST {{host}}/api/generate
+Content-Type: application/json
+
+{
+    "model": "{{model}}",
+    "prompt": "Hello!",
+    "stream": false
+}
+
+###
+POST {{host2}}/api/models/predict/statistics
+Content-Type: application/json
+
+{
+  "min_age": 14,
+  "users_rated": 8000,
+  "play_time": 120,
+  "domains": ["Strategy Games", "Family Games"],
+  "mechanics": ["Resource Management"]
+}
