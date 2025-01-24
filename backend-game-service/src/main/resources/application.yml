@@ -1,0 +1,69 @@
+
+
+
+spring:
+  config:
+    import: env.properties
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: game.machiavelli.kdg@gmail.com
+    password: nriz rsqb wwhn aaid
+    properties:
+      mail:
+        transport:
+          protocol: smtp
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        ssl:
+          protocols=TLSv1:
+            2:
+  application:
+    name: Machiavelli
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    generate-ddl: true
+    defer-datasource-initialization: true
+    open-in-view: false
+  datasource:
+    url: jdbc:postgresql://localhost:7679/machiavelli_db
+    username: user
+    password: password
+  sql:
+    init:
+      mode: always
+      data-locations: classpath:sql/data.sql
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: password
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8180/realms/machiavelli/protocol/openid-connect/certs
+          issuer-uri: http://localhost:8180/realms/machiavelli
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    be.kdg.machiavelli: DEBUG
+    sql: debug
+config:
+  achievement-beginner-architect: 10
+  achievement-expert: 10
+  achievement-high-roller: 20
+  achievement-hoarder: 10
+  achievement-master-architect: 10
+  achievement-pro: 5
+  achievement-speedrunner: 10
+  email: game.machiavelli@outlook.com
+  email-personal: The Machiavelli team

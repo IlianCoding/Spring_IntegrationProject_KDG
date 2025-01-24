@@ -1,0 +1,35 @@
+### Obtain Keycloak Token
+POST http://localhost:8180/realms/machiavelli/protocol/openid-connect/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+client_id=machiavelli-application&username=skye&password=bryan&grant_type=password&scope=openid
+
+> {%
+    client.global.set("access_token", response.body.access_token)
+%}
+
+### Create Lobby
+POST http://localhost:8080/api/lobbies/create
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+"27a33039-4525-43da-838e-2ae8ea22ed61"
+
+> {%
+    client.global.set("lobby_id", response.body.id)
+%}
+
+### Add Second Player
+PUT http://localhost:8080/api/lobbies/{{lobby_id}}/4f02f07a-bf8c-4876-8e96-d7cc2a8d4226
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+### Add Third Player
+PUT http://localhost:8080/api/lobbies/{{lobby_id}}/48cac9c0-092a-440b-a686-a02f9bd925a5
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
+
+### Start Game
+POST http://localhost:8080/api/lobbies/{{lobby_id}}/start
+Content-Type: application/json
+Authorization: Bearer {{access_token}}

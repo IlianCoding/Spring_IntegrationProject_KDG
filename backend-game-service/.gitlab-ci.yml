@@ -1,0 +1,81 @@
+stages:
+  - build
+  - test
+  - deploy
+  - production
+
+services:
+  - name: docker:dind
+    command: ["--tls=false"]
+
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false -Dorg.gradle.jvmargs=-Xmx1024m"
+  DOCKER_IMAGE: "ellenberckmans/spring_container_team2"
+  DOCKER_HOST: "tcp://docker:2375"
+  DOCKER_TLS_CERTDIR: ""
+  DOCKER_DRIVER: overlay2
+
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - .gradle/
+    - build/
+
+build:
+  stage: build
+  image: gradle:jdk21
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  before_script:
+    - export DISCORD_BOT_TOKEN=$DISCORD_BOT_TOKEN
+  script:
+    - echo "Building the project using Gradle"
+    - gradle clean build -x test --info
+  artifacts:
+    paths:
+      - "build/"
+
+test:
+  stage: test
+  image: gradle:jdk21
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event' && $CI_MERGE_REQUEST_TITLE =~ /^(\[Draft\]|\(Draft\)|Draft:)/
+      when: never
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  before_script:
+    - export DISCORD_BOT_TOKEN=$DISCORD_BOT_TOKEN
+  script:
+    - echo "Running tests using Gradle"
+    - gradle clean test --info -Ddiscord.bot-token=$DISCORD_BOT_TOKEN
+  artifacts:
+    when: always
+    reports:
+      junit: ./build/test-results/test/**/TEST-*.xml
+
+deploy:
+  stage: deploy
+  image: gradle:jdk21
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - echo "Running deployment using Gradle"
+    - mv build/ deployed/
+  artifacts:
+    paths:
+      - "deployed/"
+
+production:
+  stage: production
+  image: docker:24.0.6
+  services:
+    - docker:24.0.6-dind
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  before_script:
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  script:
+    - echo "Building Docker image"
+    - docker build -t $DOCKER_IMAGE:latest .
+    - docker push $DOCKER_IMAGE:latest
